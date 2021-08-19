@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ravitejagGitHub/react-tutorial/static/css/main.5d55cd70.chunk.css",
+    "main.js": "/ravitejagGitHub/react-tutorial/static/js/main.7b0965d5.chunk.js",
+    "main.js.map": "/ravitejagGitHub/react-tutorial/static/js/main.7b0965d5.chunk.js.map",
+    "runtime-main.js": "/ravitejagGitHub/react-tutorial/static/js/runtime-main.4625be41.js",
+    "runtime-main.js.map": "/ravitejagGitHub/react-tutorial/static/js/runtime-main.4625be41.js.map",
+    "static/js/2.31107cce.chunk.js": "/ravitejagGitHub/react-tutorial/static/js/2.31107cce.chunk.js",
+    "static/js/2.31107cce.chunk.js.map": "/ravitejagGitHub/react-tutorial/static/js/2.31107cce.chunk.js.map",
+    "index.html": "/ravitejagGitHub/react-tutorial/index.html",
+    "static/css/main.5d55cd70.chunk.css.map": "/ravitejagGitHub/react-tutorial/static/css/main.5d55cd70.chunk.css.map",
+    "static/js/2.31107cce.chunk.js.LICENSE.txt": "/ravitejagGitHub/react-tutorial/static/js/2.31107cce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4625be41.js",
+    "static/js/2.31107cce.chunk.js",
+    "static/css/main.5d55cd70.chunk.css",
+    "static/js/main.7b0965d5.chunk.js"
+  ]
+}
