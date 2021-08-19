@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { Api } from "./Api";
 import { Form } from "./Form";
 import { Table } from "./Table";
 
@@ -15,6 +16,8 @@ export class App extends Component {
                 <h1> Hello Raviteja, Welcome to React.</h1>
                 <Table charactersData={characters} removeCharacter={this.removeCharacter} />
                 <Form handleSubmit={this.handleSubmit} />
+                <hr />
+                <Api />
             </div>
         );
     }
