@@ -8,7 +8,7 @@ export class Toggle extends Component {
         // this.togglesState = this.togglesState.bind(this);
     }
 
-    togglesState = () => {
+    togglesState() {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }));
@@ -16,7 +16,7 @@ export class Toggle extends Component {
 
     render() {
         return (
-            <button onClick={this.togglesState}>
+            <button onClick={()=>this.togglesState()}>
                 {this.state.isToggleOn ? 'ON' : 'OFF'}
             </button>
         )
