@@ -12,6 +12,7 @@ import { Page } from "./ConditionalRendering/PreventingRendering/Page";
 import { NumberList } from "./ListsAndKeys/List";
 import { NameForm } from "./Forms/NameForm";
 import { SelectForm } from "./Forms/SelectForm";
+import { FileInput } from "./Forms/FileInput";
 
 ReactDOM.render(
 	<>
@@ -24,6 +25,8 @@ ReactDOM.render(
 
 		<NameForm />
 		<SelectForm multiple={true} />
+
+		<FileInput />
 	</>,
 	document.querySelector("#root")
 );
