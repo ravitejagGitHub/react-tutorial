@@ -1,6 +1,9 @@
 function ListItem(props) {
 	// Correct! There is no need to specify the key here:
-	return <li>{props.value}</li>;
+	const { key, value } = props;
+	console.log(key); // Keys serve as a hint to React but they don’t get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
+	console.log(value);
+	return <li>{value}</li>;
 }
 
 export function NumberList(props) {
