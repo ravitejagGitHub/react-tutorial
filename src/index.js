@@ -10,6 +10,7 @@ import { Toggle } from "./HandlingEvents/Toggle";
 import { LoginControl } from "./ConditionalRendering/LoginControl";
 import { Page } from "./ConditionalRendering/PreventingRendering/Page";
 import { NumberList } from "./ListsAndKeys/List";
+import { NameForm } from "./Forms/NameForm";
 
 ReactDOM.render(
 	<>
@@ -19,6 +20,8 @@ ReactDOM.render(
 		<LoginControl />
 		<Page />
 		<NumberList numbers={[1, 2, 3, 4, 5, 6]} />
+
+		<NameForm />
 	</>,
 	document.querySelector("#root")
 );
