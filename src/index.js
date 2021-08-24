@@ -8,6 +8,7 @@ import { Counter } from './State/Counter';
 
 import { Toggle } from './HandlingEvents/Toggle';
 import { LoginControl } from './ConditionalRendering/LoginControl';
+import { Page } from './ConditionalRendering/PreventingRendering/Page';
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Counter />
         <Toggle />
         <LoginControl />
+        <Page />
     </>
     , document.querySelector('#root'))
 
