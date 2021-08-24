@@ -11,6 +11,7 @@ import { LoginControl } from "./ConditionalRendering/LoginControl";
 import { Page } from "./ConditionalRendering/PreventingRendering/Page";
 import { NumberList } from "./ListsAndKeys/List";
 import { NameForm } from "./Forms/NameForm";
+import { SelectForm } from "./Forms/SelectForm";
 
 ReactDOM.render(
 	<>
@@ -22,6 +23,7 @@ ReactDOM.render(
 		<NumberList numbers={[1, 2, 3, 4, 5, 6]} />
 
 		<NameForm />
+		<SelectForm />
 	</>,
 	document.querySelector("#root")
 );
