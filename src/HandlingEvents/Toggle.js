@@ -5,10 +5,10 @@ export class Toggle extends Component {
         super(props);
         this.state = { isToggleOn: false };
 
-        this.togglesState = this.togglesState.bind(this);
+        // this.togglesState = this.togglesState.bind(this);
     }
 
-    togglesState() {
+    togglesState = () => {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }));
