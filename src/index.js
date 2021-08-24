@@ -13,6 +13,7 @@ import { NumberList } from "./ListsAndKeys/List";
 import { NameForm } from "./Forms/NameForm";
 import { SelectForm } from "./Forms/SelectForm";
 import { FileInput } from "./Forms/FileInput";
+import { MultipleInputs } from "./Forms/MultipleInputs";
 
 ReactDOM.render(
 	<>
@@ -27,6 +28,8 @@ ReactDOM.render(
 		<SelectForm multiple={true} />
 
 		<FileInput />
+
+		<MultipleInputs />
 	</>,
 	document.querySelector("#root")
 );
