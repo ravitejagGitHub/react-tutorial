@@ -23,7 +23,7 @@ ReactDOM.render(
 		<NumberList numbers={[1, 2, 3, 4, 5, 6]} />
 
 		<NameForm />
-		<SelectForm />
+		<SelectForm multiple={true} />
 	</>,
 	document.querySelector("#root")
 );
