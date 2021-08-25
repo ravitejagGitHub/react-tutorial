@@ -17,6 +17,7 @@ import { MultipleInputs } from "./Forms/MultipleInputs";
 import { Calculator } from "./LiftingStateUp/Calculator";
 import { WelcomeDialog } from "./CompositionvsInheritance/WelcomeDialog";
 import { SplitPane } from "./CompositionvsInheritance/SplitPane";
+import { SignUpDialog } from "./CompositionvsInheritance/SignUpDialog";
 
 ReactDOM.render(
 	<>
@@ -25,7 +26,7 @@ ReactDOM.render(
 			right={<WelcomeDialog color="green" />}
 		/>
 
-		<WelcomeDialog />
+		<SignUpDialog />
 
 		<Calculator />
 

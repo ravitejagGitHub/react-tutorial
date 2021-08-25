@@ -5,6 +5,7 @@ export function Dialog(props) {
 		<FancyBorder color={props.color}>
 			<h1 className="dialog__title">{props.title}</h1>
 			<p className="dialog__message">{props.message}</p>
+			<div className="dialog__container">{props.children}</div>
 		</FancyBorder>
 	);
 }
