@@ -14,9 +14,12 @@ import { NameForm } from "./Forms/NameForm";
 import { SelectForm } from "./Forms/SelectForm";
 import { FileInput } from "./Forms/FileInput";
 import { MultipleInputs } from "./Forms/MultipleInputs";
+import { Calculator } from "./LiftingStateUp/Calculator";
 
 ReactDOM.render(
 	<>
+		<Calculator />
+
 		<Clock />
 		<Counter />
 		<Toggle />
