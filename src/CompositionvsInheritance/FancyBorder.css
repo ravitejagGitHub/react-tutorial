@@ -1,0 +1,17 @@
+.fancyBorder {
+    border: 5px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.fancyBorder--red {
+    border-color: red;
+}
+
+.fancyBorder--blue {
+    border-color: blue;
+}
+
+.fancyBorder--green {
+    border-color: green;
+}

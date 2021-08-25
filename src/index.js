@@ -15,9 +15,14 @@ import { SelectForm } from "./Forms/SelectForm";
 import { FileInput } from "./Forms/FileInput";
 import { MultipleInputs } from "./Forms/MultipleInputs";
 import { Calculator } from "./LiftingStateUp/Calculator";
+import { WelcomeDialog } from "./CompositionvsInheritance/WelcomeDialog";
 
 ReactDOM.render(
 	<>
+		<WelcomeDialog color="blue" />
+		<WelcomeDialog color="red" />
+		<WelcomeDialog color="green" />
+
 		<Calculator />
 
 		<Clock />
