@@ -16,12 +16,14 @@ import { FileInput } from "./Forms/FileInput";
 import { MultipleInputs } from "./Forms/MultipleInputs";
 import { Calculator } from "./LiftingStateUp/Calculator";
 import { WelcomeDialog } from "./CompositionvsInheritance/WelcomeDialog";
+import { SplitPane } from "./CompositionvsInheritance/SplitPane";
 
 ReactDOM.render(
 	<>
-		<WelcomeDialog color="blue" />
-		<WelcomeDialog color="red" />
-		<WelcomeDialog color="green" />
+		<SplitPane
+			left={<WelcomeDialog color="blue" />}
+			right={<WelcomeDialog color="green" />}
+		/>
 
 		<Calculator />
 

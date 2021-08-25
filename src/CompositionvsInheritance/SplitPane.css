@@ -1,0 +1,11 @@
+.splitpane {
+    display: flex;   
+}
+
+.splitpane__left {
+    flex-basis: 20%;
+}
+
+.splitpane__right {
+    flex-grow: 1;
+}
