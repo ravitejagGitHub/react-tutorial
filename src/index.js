@@ -25,6 +25,8 @@ ReactDOM.render(
 			right={<WelcomeDialog color="green" />}
 		/>
 
+		<WelcomeDialog />
+
 		<Calculator />
 
 		<Clock />
