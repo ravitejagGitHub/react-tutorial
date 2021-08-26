@@ -1,32 +1,21 @@
 import { Component } from "react";
+
 import { products } from "./products";
+import { ProductTable } from "./ProductTable";
+import { SearchBar } from "./SearchBar";
 
 export class FilterableProductTable extends Component {
 	render() {
 		return (
-			<>
-				<form>
-					<input type="text" placeholder="Search..." />
-					<p>
-						<input type="checkbox" /> Only show products in stock
-					</p>
-				</form>
+			<fieldset>
+				<legend>Filterable Product Table</legend>
 
-				<table class="products">
-					<thead class="header">
-						<th class="header__column">Name</th>
-						<th class="header__column">Price</th>
-					</thead>
-					<tbody>
-						{products.map((p) => (
-							<tr>
-								<td>{p.name}</td>
-								<td>{p.price}</td>
-							</tr>
-						))}
-					</tbody>
-				</table>
-			</>
+				<SearchBar placeholder="Search...">
+					Only show products in stock
+				</SearchBar>
+
+				<ProductTable products={products}></ProductTable>
+			</fieldset>
 		);
 	}
 }
