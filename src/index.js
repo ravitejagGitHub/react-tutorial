@@ -18,9 +18,11 @@ import { Calculator } from "./LiftingStateUp/Calculator";
 import { WelcomeDialog } from "./CompositionvsInheritance/WelcomeDialog";
 import { SplitPane } from "./CompositionvsInheritance/SplitPane";
 import { SignUpDialog } from "./CompositionvsInheritance/SignUpDialog";
+import { FilterableProductTable } from "./ThinkingInReact/FilterableProductTable";
 
 ReactDOM.render(
 	<>
+		<FilterableProductTable />
 		<SplitPane
 			left={<WelcomeDialog color="blue" />}
 			right={<WelcomeDialog color="green" />}
