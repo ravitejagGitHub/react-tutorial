@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import { products } from "./products";
+import { productsData } from "./products";
 import { ProductTable } from "./ProductTable";
 import { SearchBar } from "./SearchBar";
 
@@ -29,7 +29,7 @@ export class FilterableProductTable extends Component {
 
 	render() {
 		const { filterText, inStockOnly } = this.state;
-
+		const products = this._sortedProducts();
 		return (
 			<fieldset>
 				<legend>Filterable Product Table</legend>
@@ -51,5 +51,21 @@ export class FilterableProductTable extends Component {
 				></ProductTable>
 			</fieldset>
 		);
+	}
+
+	_sortedProducts() {
+		return productsData.sort((a, b) => {
+			var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+			var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+			if (nameA < nameB) {
+				return -1;
+			}
+			if (nameA > nameB) {
+				return 1;
+			}
+
+			// names must be equal
+			return 0;
+		});
 	}
 }
