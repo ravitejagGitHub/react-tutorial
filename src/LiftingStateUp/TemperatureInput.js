@@ -15,7 +15,7 @@ export class TemperatureInput extends Component {
 	render() {
 		const { scale, temperature } = this.props;
 		return (
-			<div classNam={`temparature__${scale}`}>
+			<div className={`temparature__${scale}`}>
 				<legend>Enter temperature in {scaleNames[scale]}:</legend>
 				<input type="number" onChange={this.handleChange} value={temperature} />
 			</div>

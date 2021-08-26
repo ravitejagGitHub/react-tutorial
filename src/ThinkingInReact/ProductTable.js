@@ -4,16 +4,24 @@ import { ProductRow } from "./ProductRow";
 
 export class ProductTable extends Component {
 	render() {
-		const { products } = this.props;
-		return (
-			<table class="products">
+		const { products, filterText, inStockOnly } = this.props;
+		const filteredProducts = products.filter(
+			(p) =>
+				p.name.toLocaleLowerCase().indexOf(filterText.toLocaleLowerCase()) >=
+					0 && (inStockOnly ? p.stocked === inStockOnly : true)
+		);
+
+		return filteredProducts.length > 0 ? (
+			<table className="products">
 				<ProductHeader headers={["Name", "Price"]} />
 				<tbody>
-					{products.map((p) => (
-						<ProductRow product={p} />
+					{filteredProducts.map((p) => (
+						<ProductRow key={p.name} product={p} />
 					))}
 				</tbody>
 			</table>
+		) : (
+			<p>No Products found!</p>
 		);
 	}
 }
